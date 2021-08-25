@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { UserForm } from './components/userForm';
+import { Userform } from './components/userform';
 
 function App() {
   return (
