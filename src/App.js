@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { UserForm } from './components/userForm';
 import { Link, Route,  BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Home } from './components/Home';
 
 function App() {
   return (
