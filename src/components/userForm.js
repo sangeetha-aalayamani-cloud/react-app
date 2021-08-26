@@ -61,8 +61,11 @@ export function UserForm() {
             <input value={userForm.gender} name='gender' onChange={handleEvent} type='radio' value='Male'/>Male
             <button onClick={saveUser}> Save</button>
             {users.map(function (user, index) {
-                return <div>{user.firstname}, {user.age}</div> 
+                return <div>{user.firstname}, {user.age}
+                    <button id={user.id} onClick={deleteUser} >Delete</button>
+                </div>
             })}
+            <Counter count={users.length} user={userform}></Counter>
         </div>
     );
 }
